@@ -5,7 +5,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4;
-    overflow-x: hidden;
 }
 
 /* Header styles */
@@ -67,6 +66,7 @@ body {
     margin: 20px 0 30px;
     position: relative;
     z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Add shadow for better contrast */
 }
 
 .hero img {
@@ -153,14 +153,39 @@ body {
 }
 
 /* Adventure section */
+.adventure {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.adventure h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2a5d7c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
 .adventure-gallery {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .adventure-gallery figure {
     text-align: center;
+    margin: 0;
+    flex: 0 1 200px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #444;
 }
 
 .adventure-gallery img {
@@ -173,11 +198,16 @@ body {
 /* Footer styles */
 .footer-content {
     display: flex;
+    flex-direction: row-reverse; /* Reverse the order to put social icons on right */
     justify-content: space-between;
     align-items: center;
     background-color: #a78bfa;
     padding: 20px;
     color: white;
+}
+
+.media_links {
+    display: flex;
 }
 
 .media_links a img {
