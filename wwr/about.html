@@ -10,42 +10,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="rafting.css">
+</head>
 <body>
     <header>
-        <a href="index.html" class="logo"><img src="images/logo.png" alt="Down the River Logo"></a>
-        <nav class="top_nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Down the River Logo" class="logo">
+            <nav class="top_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="People enjoying rafting">
-            <h1>Down the River</h1>
+        <section class="hero">
+            <h1>White Water Rafting</h1>
             <article>
-                <img src="images/happy-client.jpg" alt="Happy rafting client">
                 <p>Our mission is to provide thrilling and safe rafting experiences for adventurers of all skill levels. We believe in creating unforgettable memories while respecting and preserving the natural beauty of our rivers.</p>
+                <img src="images/happy-client.jpg" alt="Happy rafting client">
             </article>
-        </div>
-        <section>
-            <h2>History</h2>
-            <p>Down the River was founded in 1990 by a group of passionate outdoor enthusiasts. What started as a small family business has grown into one of the most trusted names in adventure sports. Over the past three decades, we've guided thousands of visitors through some of the most spectacular river routes, maintaining our commitment to safety, environmental stewardship, and exceptional customer service.</p>
         </section>
-        <section>
+        <section class="history">
+            <h2>History</h2>
+            <div class="history-content">
+                <p>Down the River was founded in 1990 by a group of passionate outdoor enthusiasts. What started as a small family business has grown into one of the most trusted names in adventure sports.</p>
+                <img src="images/history.webp" alt="Rafting history">
+                <p>Over the past three decades, we've guided thousands of visitors through some of the most spectacular river routes, maintaining our commitment to safety, environmental stewardship, and exceptional customer service.</p>
+            </div>
+        </section>
+        <section class="adventure">
             <h2>Adventure Awaits You!</h2>
-            <p>Join us for an unforgettable experience on the rapids. Our expert guides and top-quality equipment ensure both safety and excitement on every trip.</p>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/adventure1.webp" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure2.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure3.jpeg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure4.jpg" alt="Full Day Adventure">
+                    <figcaption>Full Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure5.jpg" alt="Ultimate Rapids">
+                    <figcaption>Ultimate Rapids</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
-        <nav class="media_links">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
-        </nav>
-        <p>&copy; 2024 Down the River - David Arevalo</p>
+        <div class="footer-content">
+            <nav class="media_links">
+                <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+            </nav>
+            <p>&copy; 2024 Down the River - David Arevalo</p>
+        </div>
     </footer>
 </body>
 </html>
