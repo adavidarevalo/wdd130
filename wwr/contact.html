@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="David Arevalo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Down the River</title>
+    <meta name="description" content="Contact Down the River for whitewater rafting adventures, questions, and reservations">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Down the River Logo" class="logo">
+            <nav class="top_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Contact Us</h1>
+            <article>
+                <p>Have questions about our rafting adventures? Want to make a reservation? We're here to help! Reach out to our team using the contact information below or fill out our form.</p>
+            </article>
+        </section>
+        
+        <section class="contact-info">
+            <h2>Company Information</h2>
+            <div class="info-container">
+                <div class="contact-details">
+                    <p><strong>Address:</strong> 123 River Avenue, Rapids City, ID 83707</p>
+                    <p><strong>Phone:</strong> (208) 555-7890</p>
+                    <p><strong>Email:</strong> info@downtheriver.com</p>
+                    <p><strong>Hours:</strong> Monday-Friday: 9am-5pm, Saturday: 10am-4pm, Sunday: Closed</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.748450993044!2d-116.21639522393851!3d43.59801905555839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef89c8c911411%3A0x90fe558b9171bbcb!2sBoise%20River!5b1!4m5!3m4!1s0x0%3A0x0!8m2!3d43.5980191!4d-116.2142065" width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Johnson">
+                    <figcaption>Sarah Johnson - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Michael Torres">
+                    <figcaption>Michael Torres - Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Emma Williams">
+                    <figcaption>Emma Williams - Customer Relations</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="thankyou.html" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <p>Purpose of Message:</p>
+                    <div class="radio-options">
+                        <div class="radio-option">
+                            <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <nav class="media_links">
+                <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+            </nav>
+            <p>&copy; 2024 Down the River - David Arevalo</p>
+        </div>
+    </footer>
+</body>
+</html>

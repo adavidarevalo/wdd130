@@ -195,6 +195,237 @@ body {
     border-radius: 10px;
 }
 
+/* Contact information section */
+.contact-info {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-info h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2a5d7c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.contact-details {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-details p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+}
+
+/* Team section */
+.team {
+    padding: 60px 20px;
+    background-color: #e8f4f8;
+    text-align: center;
+}
+
+.team h2 {
+    margin-bottom: 30px;
+    color: #2a5d7c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.team-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-gallery figure {
+    text-align: center;
+    margin: 0;
+    flex: 0 1 250px;
+}
+
+.team-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.team-gallery figcaption {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Contact form */
+.contact-form {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2a5d7c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background-color: #a78bfa;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #8b5cf6;
+}
+
+/* Thank You page styles */
+.thank-you {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.thank-you h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2a5d7c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.thank-you-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.thank-you-content p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.return-link {
+    margin-top: 30px;
+}
+
+.thank-you-content a:not(.submit-btn) {
+    color: #8b5cf6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.thank-you-content a:not(.submit-btn):hover {
+    text-decoration: underline;
+}
+
 /* Footer styles */
 .footer-content {
     display: flex;
